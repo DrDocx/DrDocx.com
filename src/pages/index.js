@@ -57,7 +57,13 @@ function Feature({imageUrl, title, description}) {
 function Home() {
     const context = useDocusaurusContext();
     const {siteConfig = {}} = context;
-    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+    let isMac;
+    if (typeof window !== `undefined`) {
+        isMac = window.navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+    }
+    else {
+        isMac = false;
+    }
     return (
         <Layout
             title={`Home`}
@@ -67,7 +73,7 @@ function Home() {
                     <h1 className="hero__title">{siteConfig.title}</h1>
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
                     <div className={styles.buttons}>
-                        {!isMac ?
+                        {!isMac &&
                             <Link
                                 className={clsx(
                                     'button button--outline button--secondary button--lg',
@@ -79,7 +85,8 @@ function Home() {
                                 <div className={styles.versionInfo}>
                                     DrDocx 0.1.3-alpha - Windows
                                 </div>
-                            </Link> :
+                            </Link> }
+                        {isMac &&
                             <Link
                                 className={clsx(
                                     'button button--outline button--secondary button--lg',
