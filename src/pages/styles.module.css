@@ -43,3 +43,16 @@
 .getStarted {
   width: 200px;
 }
+
+.getStarted:hover {
+  background-color: #f3f3f3;
+}
+
+.otherReleases {
+  font-size: 13px;
+  color: white;
+}
+
+.otherReleases:hover {
+  color: lightgray;
+}

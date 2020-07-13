@@ -12,8 +12,8 @@ const features = [
         imageUrl: 'img/undraw_docusaurus_mountain.svg',
         description: (
             <>
-                Docusaurus was designed from the ground up to be easily installed and
-                used to get your website up and running quickly.
+                DrDocx was built for medical professionals to be able to use their existing templates and get up and
+                running quickly with minimal configuration.
             </>
         ),
     },
@@ -22,18 +22,17 @@ const features = [
         imageUrl: 'img/undraw_docusaurus_tree.svg',
         description: (
             <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-                ahead and move your docs into the <code>docs</code> directory.
+                DrDocx streamlines the most tedious parts of your workflow and lets you spend more time on meaningful
+                work.
             </>
         ),
     },
     {
-        title: <>Powered by React</>,
+        title: <>You Control Your Data</>,
         imageUrl: 'img/undraw_docusaurus_react.svg',
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+                DrDocx takes privacy seriously, so your data never leaves your computer. We don't collect usage data, we don't track you, and we don't have access to your patient data.
             </>
         ),
     },
@@ -60,8 +59,7 @@ function Home() {
     let isMac;
     if (typeof window !== `undefined`) {
         isMac = window.navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-    }
-    else {
+    } else {
         isMac = false;
     }
     return (
@@ -74,35 +72,36 @@ function Home() {
                     <p className="hero__subtitle">{siteConfig.tagline}</p>
                     <div className={styles.buttons}>
                         {!isMac &&
-                            <Link
-                                className={clsx(
-                                    'button button--outline button--secondary button--lg',
-                                    styles.getStarted,
-                                )}
-                                to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/0.1.4-alpha/DrDocx-Setup-0.1.4-alpha.exe'}>
-                                Download
-                                <br/>
-                                <div className={styles.versionInfo}>
-                                    DrDocx 0.1.4-alpha - Windows
-                                </div>
-                            </Link> }
+                        <Link
+                            className={clsx(
+                                'button button--outline button--secondary button--lg',
+                                styles.getStarted,
+                            )}
+                            to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/v0.1.4-alpha/DrDocx-Setup-0.1.4-alpha.exe'}>
+                            Download
+                            <br/>
+                            <div className={styles.versionInfo}>
+                                DrDocx 0.1.4-alpha - Windows
+                            </div>
+                        </Link>}
                         {isMac &&
-                            <Link
-                                className={clsx(
-                                    'button button--outline button--secondary button--lg',
-                                    styles.getStarted,
-                                )}
-                                to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/0.1.4-alpha/DrDocx-0.1.4-alpha.dmg'}>
-                                Download
-                                <br/>
-                                <div className={styles.versionInfo}>
-                                    DrDocx 0.1.4-alpha - Mac
-                                </div>
-                            </Link>}
-                            <Link to={'https://github.com/DrDocx/DrDocx-Desktop/releases'}>
-                                Other Releases and Platforms
-                            </Link>
+                        <Link
+                            className={clsx(
+                                'button button--outline button--secondary button--lg',
+                                styles.getStarted,
+                            )}
+                            to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/v0.1.4-alpha/DrDocx-0.1.4-alpha.dmg'}>
+                            Download
+                            <br/>
+                            <div className={styles.versionInfo}>
+                                DrDocx 0.1.4-alpha - Mac
+                            </div>
+                        </Link>}
                     </div>
+                    {/*<br />*/}
+                    <Link className={styles.otherReleases} to={'https://github.com/DrDocx/DrDocx-Desktop/releases'}>
+                        Other Releases and Platforms
+                    </Link>
                 </div>
             </header>
             <main>
