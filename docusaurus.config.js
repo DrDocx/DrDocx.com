@@ -17,7 +17,7 @@ module.exports = {
         {
           to: 'docs/',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'Documentation',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
@@ -32,7 +32,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
             {
               label: 'Style Guide',
@@ -67,11 +67,8 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
+          homePageId: 'installation-guide',
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true
