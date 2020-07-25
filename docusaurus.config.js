@@ -35,12 +35,8 @@ module.exports = {
           title: 'Documentation',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Installation Guide',
               to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
             },
           ],
         },
