@@ -77,7 +77,7 @@ function Home() {
                                 'button button--outline button--secondary button--lg',
                                 styles.getStarted,
                             )}
-                            to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/v0.1.5-alpha/DrDocx-Setup-0.1.5-alpha.exe'}>
+                            to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/v0.1.5-alpha/DrDocx-Web-Setup-0.1.5-alpha.exe'}>
                             Download
                             <br/>
                             <div className={styles.versionInfo}>
