@@ -77,11 +77,11 @@ function Home() {
                                 'button button--outline button--secondary button--lg',
                                 styles.getStarted,
                             )}
-                            to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/v0.1.4-alpha/DrDocx-Setup-0.1.4-alpha.exe'}>
+                            to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/v0.1.5-alpha/DrDocx-Setup-0.1.5-alpha.exe'}>
                             Download
                             <br/>
                             <div className={styles.versionInfo}>
-                                DrDocx 0.1.4-alpha - Windows
+                                DrDocx 0.1.5-alpha - Windows
                             </div>
                         </Link>}
                         {isMac &&
@@ -90,11 +90,11 @@ function Home() {
                                 'button button--outline button--secondary button--lg',
                                 styles.getStarted,
                             )}
-                            to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/v0.1.4-alpha/DrDocx-0.1.4-alpha.dmg'}>
+                            to={'https://github.com/DrDocx/DrDocx-Desktop/releases/download/v0.1.5-alpha/DrDocx-0.1.5-alpha.dmg'}>
                             Download
                             <br/>
                             <div className={styles.versionInfo}>
-                                DrDocx 0.1.4-alpha - Mac
+                                DrDocx 0.1.5-alpha - Mac
                             </div>
                         </Link>}
                     </div>
