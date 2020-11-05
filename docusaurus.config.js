@@ -21,6 +21,7 @@ module.exports = {
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'about', label: 'About Us', position: 'left'},
         {
           href: 'https://github.com/DrDocx',
           label: 'GitHub',
